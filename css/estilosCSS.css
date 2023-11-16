@@ -1,0 +1,91 @@
+body{
+	margin: 0;
+	padding: 0;
+	border: 1px solid black;
+}
+
+.box{
+	background: #f1f1f1;
+	width: 99%;
+	height: 200px;
+	border: 1px solid black;
+	margin: auto;
+	position: relative;
+}
+
+
+/*TRANSLATE*/
+
+.box .translate{
+	background: red;
+	width: 80px;
+	height: 30px;
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	transition: transform 5s ease-in, background-color 5s ease-in;
+	transition-delay: 1s;
+}
+
+.box .translate:hover{
+	transform: translate(800px);
+	background-color: blue;
+}
+
+
+/*SKEW*/
+
+.box .skew{
+	background: red;
+	width: 100px;
+	height: 80px;
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	transition: transform 7s ease-in, border-radius 5s ease-in;
+	transition-delay: 1s;
+}
+
+.box .skew:hover{
+	transform: skew(40deg);
+	border-radius: 20px 0 20px 0;
+}
+
+
+/*ROTATE*/
+
+.box .rotate{
+	background: red;
+	width: 70px;
+	height: 50px;
+	position: absolute;
+	top: 40%;
+	left: 15%;
+	transition: transform 7s ease-in, border 5s ease-in;
+	transition-delay: 1s;
+}
+
+.box .rotate:hover{
+	transform: rotate(160deg);
+	border: 7px solid black;
+}
+
+
+/*SCALE*/
+
+.box .scale{
+	background: red;
+	width: 70px;
+	height: 50px;
+	position: absolute;
+	top: 40%;
+	left: 45%;
+	transition: transform 8s ease-in, border-radius 3s ease-in, background-color 3s;
+	transition-delay: 0.5s;
+}
+
+.box .scale:hover{
+	transform: scale(1.5);
+	border-radius: 50px;
+	background-color: rgba(0, 0, 0, .4);
+}
